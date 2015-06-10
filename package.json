@@ -1,0 +1,25 @@
+{
+  "name": "india-pincode-lookup",
+  "version": "1.0.0",
+  "description": "Node module to easily lookup any pincode details in India.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithunsasidharan/India-Pincode-Lookup.git"
+  },
+  "keywords": [
+    "pincodes",
+    "india",
+    "india pincodes",
+    "pincode"
+  ],
+  "author": "Mithun Sasidharan <mithunsasidharan89@gmail.com> (http://stackoverflow.com/users/1008222/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mithunsasidharan/India-Pincode-Lookup/issues"
+  },
+  "homepage": "https://github.com/mithunsasidharan/India-Pincode-Lookup#readme"
+}
