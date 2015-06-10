@@ -5,9 +5,13 @@ Node module to easily lookup any pincode details in India.
 
 The pincode data used in this module is provided by data.gov.in
 
-Install using npm:
+## Install using npm:
 
-    npm install india-pincode-lookup
+``` bash
+npm install india-pincode-lookup
+```
+
+## Example usage
 
 ```javascript
 var pincodeDirectory = require('india-pincode-lookup');
@@ -41,6 +45,11 @@ pincodeDirectory.lookup('600096')
 	stateName: 'TAMIL NADU'
 	}]*/
 ```
+
+## Sources
+
+The pincode data used in the module has been provided by data.gov.in.
+
 
 ## License
 
