@@ -1,6 +1,6 @@
 {
   "name": "india-pincode-lookup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node module to easily lookup any pincode details in India.",
   "main": "index.js",
   "scripts": {
