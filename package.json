@@ -4,7 +4,15 @@
   "description": "Node module to easily lookup any pincode details in India.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "jest",
+    "test:all": "jest --coverage --runInBand",
+    "lint:check": "eslint . --ext .ts --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .ts --fix --ignore-path .gitignore",
+    "format:fix": "prettier --write \"***/**/*.ts\" \"***/**/*.js\" \"***/**/*.json\" \"**/*.md\"",
+    "format:check": "prettier --check '**/*.{ts,js,json,md}'",
+    "build": "tsc",
+    "prepare": "husky",
+    "main": "dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +33,22 @@
   "bugs": {
     "url": "https://github.com/mithunsasidharan/India-Pincode-Lookup/issues"
   },
-  "homepage": "https://github.com/mithunsasidharan/India-Pincode-Lookup#readme"
+  "homepage": "https://github.com/mithunsasidharan/India-Pincode-Lookup#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.5",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  },
+  "type": "commonjs",
+  "types": "dist/index.d.ts"
 }

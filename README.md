@@ -1,5 +1,4 @@
-India-Pincode-Lookup
-====================
+# India-Pincode-Lookup
 
 Node module to easily lookup any pincode details in India.
 
@@ -7,16 +6,17 @@ The pincode data used in this module is provided by data.gov.in
 
 ## Install using npm:
 
-``` bash
+```bash
 npm install india-pincode-lookup
 ```
 
 ## Example usage
 
 ```javascript
-var pincodeDirectory = require('india-pincode-lookup');
+import { lookup } from 'india-pincode-lookup';
 
-pincodeDirectory.lookup('Arjun Guri');
+const details = lookup(682028);
+console.log(details);
 /*[{ 
 	officeName: 'Arjun Guri B.O',
 	pincode: 785697,
@@ -24,7 +24,6 @@ pincodeDirectory.lookup('Arjun Guri');
 	districtName: 'Sibsagar',
 	stateName: 'ASSAM' 
 	}]*/
-
 
 pincodeDirectory.lookup(682028);
 /*[{
@@ -35,8 +34,7 @@ pincodeDirectory.lookup(682028);
 	stateName: 'KERALA'
 	}]*/
 
-
-pincodeDirectory.lookup('600096')
+pincodeDirectory.lookup('600096');
 /*[{
 	officeName: 'Perungudi S.O',
 	pincode: 600096,
@@ -49,7 +47,6 @@ pincodeDirectory.lookup('600096')
 ## Sources
 
 The pincode data used in the module has been provided by data.gov.in.
-
 
 ## License
 

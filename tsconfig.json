@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "@app/index": ["src/index"]
+    }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "types/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
