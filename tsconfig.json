@@ -15,15 +15,8 @@
     "moduleResolution": "node",
     "paths": {
       "@app/index": ["src/index"]
-    },
+    }
   },
-  "include": [
-    "src/**/*.ts", 
-    "test/**/*.ts",
-    "types/**/*",
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*.ts", "test/**/*.ts", "types/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
