@@ -1,4 +1,4 @@
-import { lookup } from "@app/index";
+import { lookup } from '@app/index';
 
 describe('lookup function', () => {
   it('should return correct details for a valid pincode', () => {
